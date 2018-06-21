@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  sender: 1
+  recipient: 1
+  lanugauge: one
+
+two:
+  user: two
+  sender: 1
+  recipient: 1
+  lanugauge: two
