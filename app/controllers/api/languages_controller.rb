@@ -5,8 +5,8 @@ class Api::LanguagesController < ApplicationController
     end
 
     def show 
-        @language = language.find(params[:id])
-        render json: @user
+        @language = Language.find(params[:id])
+        render json: @language
     end
 
     def create 
