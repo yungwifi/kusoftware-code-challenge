@@ -17,7 +17,6 @@ class Api::LanguagesController < ApplicationController
     def update 
         @language = Language.find(params[:id])
         @language.update!(language_params)
-
         render json: @language
     end
 
