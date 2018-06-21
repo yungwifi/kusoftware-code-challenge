@@ -5,9 +5,11 @@ one:
   sender: 1
   recipient: 1
   lanugauge: one
+  message: MyText
 
 two:
   user: two
   sender: 1
   recipient: 1
   lanugauge: two
+  message: MyText

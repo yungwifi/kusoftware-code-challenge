@@ -5,6 +5,7 @@ class CreateMessages < ActiveRecord::Migration[5.2]
       t.integer :sender
       t.integer :recipient
       t.references :language, foreign_key: true
+      t.text :message
 
       t.timestamps
     end
