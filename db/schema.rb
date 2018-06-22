@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2018_06_21_174631) do
     t.integer "sender"
     t.integer "recipient"
     t.bigint "language_id"
-    t.text "message"
+    t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["language_id"], name: "index_messages_on_language_id"
