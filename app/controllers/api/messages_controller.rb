@@ -10,11 +10,17 @@ class Api::MessagesController < ApplicationController
     end
 
     def create 
-        @message = Language.find(params[:language_id]).messages
-        messageObject = message_params
-        messageObject[:user_id] = params[:user_id]
-        @message.create!(messageObject)
-        render json: @message
+        @user_proficiency = Proficiency.find(params[:user_id]).proficiency_level
+        @recipient_proficiency = Proficiency.find(message_params[:recipient]).proficiency_level
+            if (@user_proficiency - @recipient_proficiency).abs <= 2
+                  @message = Language.find(params[:language_id]).messages
+                  messageObject = message_params
+                  messageObject[:user_id] = params[:user_id]
+                  @message.create!(messageObject)
+                  render json: @message
+            else 
+                return "Message Send Failed. Proficiency levels must be within two in order to send messages."
+            end
     end
 
     def update 
