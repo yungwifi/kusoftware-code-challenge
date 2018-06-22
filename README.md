@@ -1,24 +1,11 @@
-# README
+#kusoftware Code Challenge 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a code challenge provided to me to test my knowledge building out backends using Ruby on Rails. 
 
-Things you may want to cover:
+To run this backend fork and clone the repo down to your local machine.
 
-* Ruby version
+Run `bundle install` in your command line.
 
-* System dependencies
+Then run `rails s` in your command line. 
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
