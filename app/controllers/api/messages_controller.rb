@@ -19,7 +19,7 @@ class Api::MessagesController < ApplicationController
                   @message.create!(messageObject)
                   render json: @message
             else 
-                raise "Message Send Failed. Proficiency levels must be within two in order to send messages."
+                raise "Message Send Failure. Proficiency levels must be within two in order to send messages."
             end
     end
 
